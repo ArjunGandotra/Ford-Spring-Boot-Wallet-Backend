@@ -13,8 +13,8 @@ public class WalletIntegrationTest {
 
     @Test
     void createWalletTest(){
-        WalletDto newWallet = new WalletDto(1,"dayalan",1000.0);
-        assertEquals("dayalan",this.walletService.createWallet(newWallet).getName());
+        WalletDto newWallet = new WalletDto(1,"arjun",1500.0);
+        assertEquals("arjun",this.walletService.createWallet(newWallet).getName());
     }
 
     @Test

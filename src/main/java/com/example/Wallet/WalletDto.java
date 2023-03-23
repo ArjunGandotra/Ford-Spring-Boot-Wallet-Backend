@@ -17,12 +17,12 @@ public class WalletDto {
     }
 
 
-    @NotNull(message = "Id cant be null")
+    @NotNull(message = "ID shouldn't be NULL.")
     @Id
     private Integer id;
 
-    @NotBlank(message = "Name cant be blank")
-    @Pattern(regexp = "[a-zA-Z]{3,20}", message = "Name should contain 3 - 20 character and no special characters allowed")
+    @NotBlank(message = "Name shouldn't be NULL.")
+    @Pattern(regexp = "[a-zA-Z]{5,20}", message = "Name should contain 5 - 20 characters without any special characters.")
     private String name;
     private Double balance;
     private LocalDate DateofCreation;

@@ -14,7 +14,7 @@ public class WalletServiceTests {
 
     @Test
     void createWalletTest(){
-        WalletDto newWallet = new WalletDto(1,"Dayalan",2345.0);
-        assertEquals("Dayalan", this.walletService.createWallet(newWallet).getName());
+        WalletDto newWallet = new WalletDto(1,"Arjun",6700.0);
+        assertEquals("Arjun", this.walletService.createWallet(newWallet).getName());
     }
 }
