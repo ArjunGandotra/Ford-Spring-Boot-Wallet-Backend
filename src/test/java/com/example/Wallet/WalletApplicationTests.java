@@ -18,7 +18,7 @@ class WalletApplicationTests {
 
 	@Test
 	void testCreateWallet(){
-		WalletDto wallet1 =new WalletDto(1, "Arjun", 1500.0);
+		WalletDto wallet1 =new WalletDto(1,"Arjun","arjun@email.com",1500.0);
 		assertEquals("Arjun", this.walletService.createWallet(wallet1).getName());
 	}
 
@@ -30,8 +30,8 @@ class WalletApplicationTests {
 	}
 	@Test
 	void testUpdateWallet() throws WalletException {
-		WalletDto wallet1 = new WalletDto(1,"Arjun",3000.0);
-		assertEquals(5000.0,this.walletService.updateWallet(wallet1).getBalance());
+		WalletDto wallet1 = new WalletDto(1,"Arjun","arjun@email.com",1500.0);
+		assertEquals(1500.0,this.walletService.updateWallet(wallet1).getBalance());
 	}
 
 
