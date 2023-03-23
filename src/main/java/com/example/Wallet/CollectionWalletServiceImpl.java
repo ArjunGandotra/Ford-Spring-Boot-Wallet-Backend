@@ -39,7 +39,7 @@ public class CollectionWalletServiceImpl implements WalletService{
 
         WalletDto temp = walletRepository.getWalletById(id);
         if(temp == null){
-            throw new WalletException("Id does not exist ! ");
+            throw new WalletException("ID doesn't exist! ");
         }
         this.walletRepository.deleteWalletById(id);
         return temp;
